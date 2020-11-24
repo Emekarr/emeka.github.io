@@ -1,0 +1,131 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+body {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+/* website header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-family: "Nerko One", cursive;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: royalblue;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 50vw;
+  height: 10vh;
+}
+.nav-tray {
+  position: absolute;
+  height: 30vh;
+  width: 70%;
+  transition: all 0.5s ease-in-out;
+  top: 0rem;
+  right: -100%;
+  margin: 0rem;
+}
+.nav-tray-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.nav-tray-inner > li {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  padding-top: 1.5rem;
+}
+.nav-tray-inner > li > a,
+.nav-tray-inner > .fa {
+  text-decoration: none;
+  color: royalblue;
+  font-size: 1.3rem;
+}
+.toggle-navtray-buttons {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+.fa-chevron-left {
+  color: royalblue;
+}
+
+/* home page main body */
+main {
+  height: 90vh;
+  width: 100vw;
+}
+.main-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: royalblue;
+  margin-top: 2rem;
+}
+.profile-photo > h1 {
+  font-size: 0.6rem;
+  color: white;
+  margin: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+.bio-hello > h1 {
+  font-size: 1.6rem;
+}
+.bio > h1 {
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-align: center;
+  margin: 0rem 1rem;
+}
+.social-icons{
+    margin-top: 5rem;
+}
+.social-icons > a > i {
+    color: royalblue;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* projects main section */
+.project-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.not-available{
+    color: red;
+    margin-top: 3rem;
+}
+.project-note{
+    font-size: 0.5rem;
+}
+.project-note > h1{
+    font-weight: 100;
+    text-align: center;
+    margin: 2rem 1rem;
+}
