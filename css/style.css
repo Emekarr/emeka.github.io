@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
 }
@@ -11,6 +12,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .name {
   font-family: "Nerko One", cursive;
@@ -94,38 +96,81 @@ main {
 }
 .bio-hello > h1 {
   font-size: 1.6rem;
+  font-family: "Nerko One", cursive;
 }
 .bio > h1 {
   font-size: 0.8rem;
   font-weight: 100;
   text-align: center;
-  margin: 0rem 1rem;
+  margin: 0rem 3rem;
 }
-.social-icons{
-    margin-top: 5rem;
+.social-icons {
+  margin-top: 5rem;
 }
 .social-icons > a > i {
-    color: royalblue;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  color: royalblue;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 /* projects main section */
-.project-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.project-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.not-available{
-    color: red;
-    margin-top: 3rem;
+.not-available {
+  color: red;
+  margin-top: 3rem;
 }
-.project-note{
-    font-size: 0.5rem;
+.project-note {
+  font-size: 0.5rem;
 }
-.project-note > h1{
+.project-note > h1 {
+  font-weight: 100;
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 10vh;
+  }
+  .name {
+    font-size: 3rem;
+  }
+  .nav-tray {
+    height: 100%;
+    right: 0rem;
+  }
+  .nav-tray-inner{
+  flex-direction: row;
+  margin: 0rem;
+  }
+.nav-tray-inner > li {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  margin: 0rem 0.5rem;
+}
+  .nav-tray-inner > .fa,
+  .fa-chevron-left {
+    visibility: hidden;
+  }
+
+  /* profile picture */
+  .profile-photo{
+    height: 16rem;
+    width: 16rem;
+  }
+  .bio-hello > h1 {
+    font-size: 2.5rem;
+  }
+  .bio > h1 {
+    font-size: 1rem;
     font-weight: 100;
     text-align: center;
-    margin: 2rem 1rem;
+    margin: 0rem 15rem;
+  }
 }
