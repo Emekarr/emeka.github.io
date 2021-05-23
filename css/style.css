@@ -7,6 +7,9 @@ body {
   padding: 0rem;
   margin: 0rem;
 }
+*{
+  margin: 0;
+}
 
 /* website header */
 header {
@@ -95,7 +98,7 @@ nav {
 
 /* home page main body */
 main {
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
 }
 .main-profile {
@@ -124,7 +127,7 @@ main {
   font-size: 0.8rem;
   font-weight: 100;
   text-align: center;
-  margin: 0rem 3rem;
+  margin: 1.2rem 3rem;
 }
 .social-icons {
   margin-top: 5rem;
@@ -153,9 +156,6 @@ main {
   font-weight: 100;
   text-align: center;
   margin: 2rem 1rem;
-}
-main {
-  height: 80vh;;
 }
 footer{
   height: 8vh;;
@@ -228,6 +228,6 @@ p > a {
     width: 40em;
     font-weight: 100;
     text-align: center;
-    margin: 0rem 15rem;
+    margin: 1.3rem 15rem;
   }
 }
