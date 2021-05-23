@@ -21,25 +21,32 @@
 
       <nav>
         <!-- open menu tray for mobile mode -->
-        <i class="fa fa-2x fa-chevron-left toggle-navtray-buttons" aria-hidden="true"></i>
+        <i class="fa fa-2x fa-bars toggle-navtray-buttons"></i>
 
-        <ul class="nav-tray">
-          <div class="nav-tray-inner">
-            <!-- close mobile tray -->
-            <i class="fa fa-2x fa-close toggle-navtray-buttons" aria-hidden="true"></i>
-            <!-- navigation items -->
-            <li><a href="index.html">home</a></li>
-            <li><a href="project.html">projects</a></li>
-            <li><a href="https://emekarr.hashnode.dev">blog</a></li>
+        <!-- open menu tray for mobile mode -->
+        <div class="nav-tray-modal">
+          <!-- Modal content -->
+          <div class="nav-content">
+            <div class="nav-tray-inner">
+              <!-- close mobile tray -->
+              <i
+                class="fa fa-2x fa-close toggle-navtray-buttons"
+                aria-hidden="true"
+              ></i>
+              <!-- navigation items -->
+              <li><a href="index.html">home</a></li>
+              <li><a href="project.html">projects</a></li>
+              <li><a href="https://emekarr.hashnode.dev">blog</a></li>
+            </div>
           </div>
-        </ul>
+        </div>
       </nav>
     </header>
 
     <main>
       <div class="main-profile">
         <div class="profile-photo">
-          <h1>picture suppose dey here but i no get fine picture</h1>
+          <img src="./images/me.png" alt="my image" />
         </div>
         <div class="bio-hello">
           <h1>Hi, I am Emeka!</h1>
@@ -47,9 +54,10 @@
         <div class="bio">
           <h1>
             I am a 200 level student of the Department of Physics, University of
-            Lagos, Nigeria. I am passionate about tech and I build apps on the
-            Android platform using Kotlin and Java and I build servers
-            with the help of NodeJS and expressJS.
+            Lagos, Nigeria. I am passionate about tech and I am a FullStack
+            Developer and an Android Developer. I build on the Android platform
+            using Kotlin, I build servers with the help of NodeJS and expressJS
+            and I build websites with ReactJS.
           </h1>
         </div>
         <div class="social-icons">
@@ -70,6 +78,10 @@
       </div>
     </main>
 
+    
+    <footer>
+      <p class="footer-text"> made with <span class="footer-heart">&#9829</span> by <a href="https://github.com/emekarr">emekarr</a></p>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

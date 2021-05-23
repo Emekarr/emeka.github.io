@@ -21,24 +21,25 @@
 
       <nav>
         <!-- open menu tray for mobile mode -->
-        <i
-          class="fa fa-2x fa-chevron-left toggle-navtray-buttons"
-          aria-hidden="true"
-        ></i>
+        <i class="fa fa-2x fa-bars toggle-navtray-buttons"></i>
 
-        <ul class="nav-tray">
-          <div class="nav-tray-inner">
-            <!-- close mobile tray -->
-            <i
-              class="fa fa-2x fa-close toggle-navtray-buttons"
-              aria-hidden="true"
-            ></i>
-            <!-- navigation items -->
-            <li><a href="index.html">home</a></li>
-            <li><a href="project.html">projects</a></li>
-            <li><a href="https://emekarr.hashnode.dev">blog</a></li>
+        <!-- open menu tray for mobile mode -->
+        <div class="nav-tray-modal">
+          <!-- Modal content -->
+          <div class="nav-content">
+            <div class="nav-tray-inner">
+              <!-- close mobile tray -->
+              <i
+                class="fa fa-2x fa-close toggle-navtray-buttons"
+                aria-hidden="true"
+              ></i>
+              <!-- navigation items -->
+              <li><a href="index.html">home</a></li>
+              <li><a href="project.html">projects</a></li>
+              <li><a href="https://emekarr.hashnode.dev">blog</a></li>
+            </div>
           </div>
-        </ul>
+        </div>
       </nav>
     </header>
 
@@ -50,6 +51,11 @@
         </div>
       </div>
     </main>
+
+    
+    <footer>
+      <p class="footer-text"> made with <span class="footer-heart">&#9829</span> by <a href="https://github.com/emekarr">emekarr</a></p>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>

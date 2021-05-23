@@ -1,17 +1,21 @@
-const navTrayCloseButton = document.querySelector(".fa-close");
-const navTrayOpenButton = document.querySelector(".fa-chevron-left");
-const navTray = document.querySelector(".nav-tray");
+const nav_tray = document.querySelector(".nav-tray-modal");
+const open_menu = document.querySelector(".fa-bars");
+const close_menu = document.querySelector(".fa-close");
 
-const controlNavTray = (add, remove) => {
-  navTray.classList.remove(remove);
-  navTray.classList.add(add);
-};
+// When the user clicks on the button, open the nav_tray
+open_menu.onclick = function() {
+  nav_tray.style.display = "block";
+}
 
-navTrayOpenButton.addEventListener("click", () => {
-  controlNavTray("nav-tray-open", "nav-tray-closed");
-});
+// When the user clicks on the button, close the nav_tray
+close_menu.onclick = function() {
+  nav_tray.style.display = "none";
+}
 
-navTrayCloseButton.addEventListener("click", () => {
-  controlNavTray("nav-tray-closed", "nav-tray-open");
-});
+// When the user clicks anywhere outside of the nav_tray, close it
+window.onclick = function(event) {
+  if (event.target == nav_tray) {
+    nav_tray.style.display = "none";
+  }
+}
 

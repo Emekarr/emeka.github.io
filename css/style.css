@@ -13,12 +13,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 12vh;
 }
 .name {
   font-family: "Nerko One", cursive;
   font-size: 1.3rem;
   margin-left: 1.5rem;
-  color: royalblue;
 }
 nav {
   display: flex;
@@ -27,15 +27,44 @@ nav {
   width: 50vw;
   height: 10vh;
 }
-.nav-tray {
-  position: absolute;
-  height: 30vh;
-  width: 70%;
-  transition: all 0.5s ease-in-out;
-  top: 0rem;
-  right: -100%;
-  margin: 0rem;
+
+.nav-tray-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
+
+/* Modal Content/Box */
+.nav-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.fa-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.fa-close:hover,
+.fa-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .nav-tray-inner {
   display: flex;
   justify-content: center;
@@ -55,16 +84,13 @@ nav {
 .nav-tray-inner > li > a,
 .nav-tray-inner > .fa {
   text-decoration: none;
-  color: royalblue;
   font-size: 1.3rem;
+  color: black;
 }
 .toggle-navtray-buttons {
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
-}
-.fa-chevron-left {
-  color: royalblue;
 }
 
 /* home page main body */
@@ -84,15 +110,11 @@ main {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
-  background-color: royalblue;
   margin-top: 2rem;
 }
-.profile-photo > h1 {
-  font-size: 0.6rem;
-  color: white;
-  margin: 0.5rem;
-  text-align: center;
-  font-weight: 100;
+.profile-photo > img {
+  width: 100%;
+  height: 100%;
 }
 .bio-hello > h1 {
   font-size: 1.6rem;
@@ -108,7 +130,7 @@ main {
   margin-top: 5rem;
 }
 .social-icons > a > i {
-  color: royalblue;
+  color: black;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -132,6 +154,23 @@ main {
   text-align: center;
   margin: 2rem 1rem;
 }
+main {
+  height: 80vh;;
+}
+footer{
+  height: 8vh;;
+}
+.footer-text {
+  color: black;
+  text-align: center;
+}
+.footer-heart {
+  color: #e25555;
+}
+p > a {
+  color: black;
+  text-decoration: none;
+}
 
 @media screen and (min-width: 768px) {
   header {
@@ -144,31 +183,32 @@ main {
     height: 100%;
     right: 0rem;
   }
-  .nav-tray-inner{
-  flex-direction: row;
-  margin: 0rem;
+  .nav-tray-inner {
+    flex-direction: row;
+    margin: 0rem;
   }
-.nav-tray-inner > li {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  margin: 0rem 0.5rem;
-}
+  .nav-tray-inner > li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 0rem 0.5rem;
+  }
   .nav-tray-inner > .fa,
   .fa-chevron-left {
     visibility: hidden;
   }
 
   /* profile picture */
-  .profile-photo{
-    height: 16rem;
-    width: 16rem;
+  .profile-photo {
+    height: 12rem;
+    width: 12rem;
   }
   .bio-hello > h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .bio > h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    width: 40em;
     font-weight: 100;
     text-align: center;
     margin: 0rem 15rem;
